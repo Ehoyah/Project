@@ -842,6 +842,9 @@ input[type="search"] {
 							$("#cell_groupError").text("You must select Cell Group");
 						}
 					   
+					}, 
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						console.log(XMLHttpRequest, textStatus, errorThrown);
 					}
 					});
 			
